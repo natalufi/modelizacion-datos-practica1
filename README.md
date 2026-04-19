@@ -30,6 +30,7 @@ El objetivo es construir un pipeline alternativo al trabajado en clase, introduc
 
 - `data/`  
   Contiene los datasets de entrenamiento y test.
+  
   Los datos se incluyen en el repositorio para facilitar la reproducibilidad del notebook.
 
   Durante el desarrollo se ha prestado especial atención a evitar **data leakage**, eliminando variables que contienen información posterior a la concesión del préstamo (pagos, recoveries, settlement, etc.), ya que no estarían disponibles en un escenario real de predicción.
