@@ -30,6 +30,9 @@ El objetivo es construir un pipeline alternativo al trabajado en clase, introduc
 
 - `data/`  
   Contiene los datasets de entrenamiento y test.
+  Los datos se incluyen en el repositorio para facilitar la reproducibilidad del notebook.
+
+  Durante el desarrollo se ha prestado especial atención a evitar **data leakage**, eliminando variables que contienen información posterior a la concesión del préstamo (pagos, recoveries, settlement, etc.), ya que no estarían disponibles en un escenario real de predicción.
 
 ---
 
@@ -114,6 +117,8 @@ El trabajo demuestra la importancia de:
 - y la detección de fugas de información.
 
 Pequeñas decisiones en el pipeline pueden tener un gran impacto en el rendimiento y validez del modelo.
+
+Además, en un contexto real, este tipo de modelos puede ayudar a las entidades financieras a tomar decisiones más informadas sobre la concesión de crédito, reduciendo el riesgo de impago y mejorando la gestión del riesgo.
 
 ---
 
